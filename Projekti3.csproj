@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CeFramework_free">
+      <HintPath>..\..\..\OneDrive - OSAO\Työpöytä\CeFramework_free.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,6 +55,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formSliderRGB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSliderRGB.Designer.cs">
+      <DependentUpon>formSliderRGB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MutedColors.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoundPictureBox.cs">
@@ -59,6 +69,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSliderRGB.resx">
+      <DependentUpon>formSliderRGB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
