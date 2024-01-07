@@ -29,25 +29,31 @@
         private void InitializeComponent()
         {
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.ce_trackbarGreen2 = new Ce_TrackBar();
-            this.ce_trackbarBlue2 = new Ce_TrackBar();
             this.ce_trackbarRed2 = new Ce_TrackBar();
+            this.ce_trackbarGreen2 = new Ce_TrackBar();
             this.ce_trackbarBlue = new Ce_TrackBar();
+            this.ce_trackbarBlue2 = new Ce_TrackBar();
             this.ce_trackbarGreen = new Ce_TrackBar();
             this.ce_trackbarRed = new Ce_TrackBar();
+            this.lblBlueSecond = new System.Windows.Forms.Label();
             this.lblBlueMain = new System.Windows.Forms.Label();
+            this.lblGreenSecond = new System.Windows.Forms.Label();
             this.lblGreenMain = new System.Windows.Forms.Label();
+            this.lblSecondaryColor = new System.Windows.Forms.Label();
             this.lblMainColor = new System.Windows.Forms.Label();
+            this.lblRedSecond = new System.Windows.Forms.Label();
             this.lblRedMain = new System.Windows.Forms.Label();
             this.panelSecondaryColor = new System.Windows.Forms.Panel();
             this.panelMainColor = new System.Windows.Forms.Panel();
+            this.lblMainHex = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelTitle = new System.Windows.Forms.Panel();
-            this.lblSecondaryColor = new System.Windows.Forms.Label();
-            this.lblRedSecond = new System.Windows.Forms.Label();
-            this.lblGreenSecond = new System.Windows.Forms.Label();
-            this.lblBlueSecond = new System.Windows.Forms.Label();
+            this.txtbxMainHex = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblSecondaryHex = new System.Windows.Forms.Label();
+            this.txtbxSecondaryHex = new System.Windows.Forms.TextBox();
             this.panelContainer.SuspendLayout();
+            this.panelSecondaryColor.SuspendLayout();
             this.panelMainColor.SuspendLayout();
             this.panelTitle.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +71,7 @@
             this.panelContainer.Controls.Add(this.lblBlueMain);
             this.panelContainer.Controls.Add(this.lblGreenSecond);
             this.panelContainer.Controls.Add(this.lblGreenMain);
+            this.panelContainer.Controls.Add(this.label1);
             this.panelContainer.Controls.Add(this.lblSecondaryColor);
             this.panelContainer.Controls.Add(this.lblMainColor);
             this.panelContainer.Controls.Add(this.lblRedSecond);
@@ -74,52 +81,16 @@
             this.panelContainer.Size = new System.Drawing.Size(360, 528);
             this.panelContainer.TabIndex = 2;
             // 
-            // ce_trackbarGreen2
-            // 
-            this.ce_trackbarGreen2.BallColor = System.Drawing.Color.Lime;
-            this.ce_trackbarGreen2.JumpToMouse = false;
-            this.ce_trackbarGreen2.Location = new System.Drawing.Point(59, 376);
-            this.ce_trackbarGreen2.Maximum = 100;
-            this.ce_trackbarGreen2.Minimum = 0;
-            this.ce_trackbarGreen2.MinimumSize = new System.Drawing.Size(47, 22);
-            this.ce_trackbarGreen2.Name = "ce_trackbarGreen2";
-            this.ce_trackbarGreen2.Size = new System.Drawing.Size(250, 22);
-            this.ce_trackbarGreen2.SlideColor = System.Drawing.Color.Lime;
-            this.ce_trackbarGreen2.TabIndex = 4;
-            this.ce_trackbarGreen2.Text = "ce_TrackBar1";
-            this.ce_trackbarGreen2.Value = 0;
-            this.ce_trackbarGreen2.ValueDivison = Ce_TrackBar.ValueDivisor.By1;
-            this.ce_trackbarGreen2.ValueToSet = 0F;
-            this.ce_trackbarGreen2.ValueChanged += new Ce_TrackBar.ValueChangedEventHandler(this.ce_trackbarGreen2_ValueChanged);
-            // 
-            // ce_trackbarBlue2
-            // 
-            this.ce_trackbarBlue2.BallColor = System.Drawing.Color.Blue;
-            this.ce_trackbarBlue2.JumpToMouse = false;
-            this.ce_trackbarBlue2.Location = new System.Drawing.Point(59, 432);
-            this.ce_trackbarBlue2.Maximum = 100;
-            this.ce_trackbarBlue2.Minimum = 0;
-            this.ce_trackbarBlue2.MinimumSize = new System.Drawing.Size(47, 22);
-            this.ce_trackbarBlue2.Name = "ce_trackbarBlue2";
-            this.ce_trackbarBlue2.Size = new System.Drawing.Size(250, 22);
-            this.ce_trackbarBlue2.SlideColor = System.Drawing.Color.Blue;
-            this.ce_trackbarBlue2.TabIndex = 3;
-            this.ce_trackbarBlue2.Text = "ce_TrackBar1";
-            this.ce_trackbarBlue2.Value = 0;
-            this.ce_trackbarBlue2.ValueDivison = Ce_TrackBar.ValueDivisor.By1;
-            this.ce_trackbarBlue2.ValueToSet = 0F;
-            this.ce_trackbarBlue2.ValueChanged += new Ce_TrackBar.ValueChangedEventHandler(this.ce_trackbarBlue2_ValueChanged);
-            // 
             // ce_trackbarRed2
             // 
             this.ce_trackbarRed2.BallColor = System.Drawing.Color.Red;
             this.ce_trackbarRed2.JumpToMouse = false;
-            this.ce_trackbarRed2.Location = new System.Drawing.Point(58, 320);
+            this.ce_trackbarRed2.Location = new System.Drawing.Point(31, 316);
             this.ce_trackbarRed2.Maximum = 100;
             this.ce_trackbarRed2.Minimum = 0;
             this.ce_trackbarRed2.MinimumSize = new System.Drawing.Size(47, 22);
             this.ce_trackbarRed2.Name = "ce_trackbarRed2";
-            this.ce_trackbarRed2.Size = new System.Drawing.Size(250, 22);
+            this.ce_trackbarRed2.Size = new System.Drawing.Size(300, 22);
             this.ce_trackbarRed2.SlideColor = System.Drawing.Color.Red;
             this.ce_trackbarRed2.TabIndex = 2;
             this.ce_trackbarRed2.Text = "ce_TrackBar1";
@@ -128,16 +99,34 @@
             this.ce_trackbarRed2.ValueToSet = 0F;
             this.ce_trackbarRed2.ValueChanged += new Ce_TrackBar.ValueChangedEventHandler(this.ce_trackbarRed2_ValueChanged);
             // 
+            // ce_trackbarGreen2
+            // 
+            this.ce_trackbarGreen2.BallColor = System.Drawing.Color.Lime;
+            this.ce_trackbarGreen2.JumpToMouse = false;
+            this.ce_trackbarGreen2.Location = new System.Drawing.Point(31, 383);
+            this.ce_trackbarGreen2.Maximum = 100;
+            this.ce_trackbarGreen2.Minimum = 0;
+            this.ce_trackbarGreen2.MinimumSize = new System.Drawing.Size(47, 22);
+            this.ce_trackbarGreen2.Name = "ce_trackbarGreen2";
+            this.ce_trackbarGreen2.Size = new System.Drawing.Size(300, 22);
+            this.ce_trackbarGreen2.SlideColor = System.Drawing.Color.Lime;
+            this.ce_trackbarGreen2.TabIndex = 4;
+            this.ce_trackbarGreen2.Text = "ce_TrackBar1";
+            this.ce_trackbarGreen2.Value = 0;
+            this.ce_trackbarGreen2.ValueDivison = Ce_TrackBar.ValueDivisor.By1;
+            this.ce_trackbarGreen2.ValueToSet = 0F;
+            this.ce_trackbarGreen2.ValueChanged += new Ce_TrackBar.ValueChangedEventHandler(this.ce_trackbarGreen2_ValueChanged);
+            // 
             // ce_trackbarBlue
             // 
             this.ce_trackbarBlue.BallColor = System.Drawing.Color.Blue;
             this.ce_trackbarBlue.JumpToMouse = false;
-            this.ce_trackbarBlue.Location = new System.Drawing.Point(58, 190);
+            this.ce_trackbarBlue.Location = new System.Drawing.Point(30, 195);
             this.ce_trackbarBlue.Maximum = 100;
             this.ce_trackbarBlue.Minimum = 0;
             this.ce_trackbarBlue.MinimumSize = new System.Drawing.Size(47, 22);
             this.ce_trackbarBlue.Name = "ce_trackbarBlue";
-            this.ce_trackbarBlue.Size = new System.Drawing.Size(250, 22);
+            this.ce_trackbarBlue.Size = new System.Drawing.Size(300, 22);
             this.ce_trackbarBlue.SlideColor = System.Drawing.Color.Blue;
             this.ce_trackbarBlue.TabIndex = 1;
             this.ce_trackbarBlue.Text = "ce_TrackBar1";
@@ -146,16 +135,34 @@
             this.ce_trackbarBlue.ValueToSet = 0F;
             this.ce_trackbarBlue.ValueChanged += new Ce_TrackBar.ValueChangedEventHandler(this.ce_trackbarBlue_ValueChanged);
             // 
+            // ce_trackbarBlue2
+            // 
+            this.ce_trackbarBlue2.BallColor = System.Drawing.Color.Blue;
+            this.ce_trackbarBlue2.JumpToMouse = false;
+            this.ce_trackbarBlue2.Location = new System.Drawing.Point(31, 445);
+            this.ce_trackbarBlue2.Maximum = 100;
+            this.ce_trackbarBlue2.Minimum = 0;
+            this.ce_trackbarBlue2.MinimumSize = new System.Drawing.Size(47, 22);
+            this.ce_trackbarBlue2.Name = "ce_trackbarBlue2";
+            this.ce_trackbarBlue2.Size = new System.Drawing.Size(300, 22);
+            this.ce_trackbarBlue2.SlideColor = System.Drawing.Color.Blue;
+            this.ce_trackbarBlue2.TabIndex = 3;
+            this.ce_trackbarBlue2.Text = "ce_TrackBar1";
+            this.ce_trackbarBlue2.Value = 0;
+            this.ce_trackbarBlue2.ValueDivison = Ce_TrackBar.ValueDivisor.By1;
+            this.ce_trackbarBlue2.ValueToSet = 0F;
+            this.ce_trackbarBlue2.ValueChanged += new Ce_TrackBar.ValueChangedEventHandler(this.ce_trackbarBlue2_ValueChanged);
+            // 
             // ce_trackbarGreen
             // 
             this.ce_trackbarGreen.BallColor = System.Drawing.Color.Lime;
             this.ce_trackbarGreen.JumpToMouse = false;
-            this.ce_trackbarGreen.Location = new System.Drawing.Point(59, 133);
+            this.ce_trackbarGreen.Location = new System.Drawing.Point(31, 133);
             this.ce_trackbarGreen.Maximum = 100;
             this.ce_trackbarGreen.Minimum = 0;
             this.ce_trackbarGreen.MinimumSize = new System.Drawing.Size(47, 22);
             this.ce_trackbarGreen.Name = "ce_trackbarGreen";
-            this.ce_trackbarGreen.Size = new System.Drawing.Size(250, 22);
+            this.ce_trackbarGreen.Size = new System.Drawing.Size(300, 22);
             this.ce_trackbarGreen.SlideColor = System.Drawing.Color.Lime;
             this.ce_trackbarGreen.TabIndex = 1;
             this.ce_trackbarGreen.Text = "ce_TrackBar1";
@@ -168,12 +175,12 @@
             // 
             this.ce_trackbarRed.BallColor = System.Drawing.Color.Red;
             this.ce_trackbarRed.JumpToMouse = false;
-            this.ce_trackbarRed.Location = new System.Drawing.Point(59, 74);
+            this.ce_trackbarRed.Location = new System.Drawing.Point(31, 70);
             this.ce_trackbarRed.Maximum = 100;
             this.ce_trackbarRed.Minimum = 0;
             this.ce_trackbarRed.MinimumSize = new System.Drawing.Size(47, 22);
             this.ce_trackbarRed.Name = "ce_trackbarRed";
-            this.ce_trackbarRed.Size = new System.Drawing.Size(250, 22);
+            this.ce_trackbarRed.Size = new System.Drawing.Size(300, 22);
             this.ce_trackbarRed.SlideColor = System.Drawing.Color.Red;
             this.ce_trackbarRed.TabIndex = 1;
             this.ce_trackbarRed.Text = "ce_TrackBar1";
@@ -182,29 +189,65 @@
             this.ce_trackbarRed.ValueToSet = 0F;
             this.ce_trackbarRed.ValueChanged += new Ce_TrackBar.ValueChangedEventHandler(this.ce_trackbarRed_ValueChanged);
             // 
+            // lblBlueSecond
+            // 
+            this.lblBlueSecond.AutoSize = true;
+            this.lblBlueSecond.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlueSecond.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lblBlueSecond.Location = new System.Drawing.Point(26, 414);
+            this.lblBlueSecond.Name = "lblBlueSecond";
+            this.lblBlueSecond.Size = new System.Drawing.Size(52, 28);
+            this.lblBlueSecond.TabIndex = 0;
+            this.lblBlueSecond.Text = "Blue";
+            this.lblBlueSecond.Click += new System.EventHandler(this.label2_Click);
+            // 
             // lblBlueMain
             // 
             this.lblBlueMain.AutoSize = true;
             this.lblBlueMain.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBlueMain.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblBlueMain.Location = new System.Drawing.Point(54, 161);
+            this.lblBlueMain.Location = new System.Drawing.Point(26, 166);
             this.lblBlueMain.Name = "lblBlueMain";
             this.lblBlueMain.Size = new System.Drawing.Size(52, 28);
             this.lblBlueMain.TabIndex = 0;
             this.lblBlueMain.Text = "Blue";
             this.lblBlueMain.Click += new System.EventHandler(this.label2_Click);
             // 
+            // lblGreenSecond
+            // 
+            this.lblGreenSecond.AutoSize = true;
+            this.lblGreenSecond.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGreenSecond.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lblGreenSecond.Location = new System.Drawing.Point(26, 350);
+            this.lblGreenSecond.Name = "lblGreenSecond";
+            this.lblGreenSecond.Size = new System.Drawing.Size(67, 28);
+            this.lblGreenSecond.TabIndex = 0;
+            this.lblGreenSecond.Text = "Green";
+            this.lblGreenSecond.Click += new System.EventHandler(this.label2_Click);
+            // 
             // lblGreenMain
             // 
             this.lblGreenMain.AutoSize = true;
             this.lblGreenMain.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGreenMain.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblGreenMain.Location = new System.Drawing.Point(53, 102);
+            this.lblGreenMain.Location = new System.Drawing.Point(25, 102);
             this.lblGreenMain.Name = "lblGreenMain";
             this.lblGreenMain.Size = new System.Drawing.Size(67, 28);
             this.lblGreenMain.TabIndex = 0;
             this.lblGreenMain.Text = "Green";
             this.lblGreenMain.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // lblSecondaryColor
+            // 
+            this.lblSecondaryColor.AutoSize = true;
+            this.lblSecondaryColor.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSecondaryColor.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lblSecondaryColor.Location = new System.Drawing.Point(0, 237);
+            this.lblSecondaryColor.Name = "lblSecondaryColor";
+            this.lblSecondaryColor.Size = new System.Drawing.Size(201, 28);
+            this.lblSecondaryColor.TabIndex = 0;
+            this.lblSecondaryColor.Text = "Edit Secondary Color";
+            this.lblSecondaryColor.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblMainColor
             // 
@@ -219,12 +262,24 @@
             this.lblMainColor.Text = "Edit Main Color";
             this.lblMainColor.Click += new System.EventHandler(this.label2_Click);
             // 
+            // lblRedSecond
+            // 
+            this.lblRedSecond.AutoSize = true;
+            this.lblRedSecond.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRedSecond.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lblRedSecond.Location = new System.Drawing.Point(26, 285);
+            this.lblRedSecond.Name = "lblRedSecond";
+            this.lblRedSecond.Size = new System.Drawing.Size(46, 28);
+            this.lblRedSecond.TabIndex = 0;
+            this.lblRedSecond.Text = "Red";
+            this.lblRedSecond.Click += new System.EventHandler(this.label2_Click);
+            // 
             // lblRedMain
             // 
             this.lblRedMain.AutoSize = true;
             this.lblRedMain.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRedMain.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblRedMain.Location = new System.Drawing.Point(54, 42);
+            this.lblRedMain.Location = new System.Drawing.Point(26, 39);
             this.lblRedMain.Name = "lblRedMain";
             this.lblRedMain.Size = new System.Drawing.Size(46, 28);
             this.lblRedMain.TabIndex = 0;
@@ -234,7 +289,9 @@
             // panelSecondaryColor
             // 
             this.panelSecondaryColor.BackColor = System.Drawing.Color.Transparent;
-            this.panelSecondaryColor.Location = new System.Drawing.Point(0, 0);
+            this.panelSecondaryColor.Controls.Add(this.txtbxSecondaryHex);
+            this.panelSecondaryColor.Controls.Add(this.lblSecondaryHex);
+            this.panelSecondaryColor.Location = new System.Drawing.Point(0, 400);
             this.panelSecondaryColor.Name = "panelSecondaryColor";
             this.panelSecondaryColor.Size = new System.Drawing.Size(420, 200);
             this.panelSecondaryColor.TabIndex = 0;
@@ -243,17 +300,32 @@
             // panelMainColor
             // 
             this.panelMainColor.BackColor = System.Drawing.Color.Black;
+            this.panelMainColor.Controls.Add(this.txtbxMainHex);
+            this.panelMainColor.Controls.Add(this.lblMainHex);
             this.panelMainColor.Controls.Add(this.panelSecondaryColor);
             this.panelMainColor.Location = new System.Drawing.Point(464, 48);
             this.panelMainColor.Name = "panelMainColor";
             this.panelMainColor.Size = new System.Drawing.Size(420, 600);
             this.panelMainColor.TabIndex = 2;
             // 
+            // lblMainHex
+            // 
+            this.lblMainHex.AutoSize = true;
+            this.lblMainHex.BackColor = System.Drawing.Color.Transparent;
+            this.lblMainHex.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMainHex.ForeColor = System.Drawing.SystemColors.Menu;
+            this.lblMainHex.Location = new System.Drawing.Point(62, 267);
+            this.lblMainHex.Name = "lblMainHex";
+            this.lblMainHex.Size = new System.Drawing.Size(225, 38);
+            this.lblMainHex.TabIndex = 1;
+            this.lblMainHex.Text = "Main Color HEX";
+            this.lblMainHex.Click += new System.EventHandler(this.lblMainHex_Click);
+            // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
             this.lblTitle.Location = new System.Drawing.Point(32, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(292, 32);
@@ -271,53 +343,56 @@
             this.panelTitle.TabIndex = 2;
             this.panelTitle.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // lblSecondaryColor
+            // txtbxMainHex
             // 
-            this.lblSecondaryColor.AutoSize = true;
-            this.lblSecondaryColor.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSecondaryColor.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblSecondaryColor.Location = new System.Drawing.Point(0, 249);
-            this.lblSecondaryColor.Name = "lblSecondaryColor";
-            this.lblSecondaryColor.Size = new System.Drawing.Size(201, 28);
-            this.lblSecondaryColor.TabIndex = 0;
-            this.lblSecondaryColor.Text = "Edit Secondary Color";
-            this.lblSecondaryColor.Click += new System.EventHandler(this.label2_Click);
+            this.txtbxMainHex.BackColor = System.Drawing.Color.Black;
+            this.txtbxMainHex.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtbxMainHex.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxMainHex.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtbxMainHex.Location = new System.Drawing.Point(68, 312);
+            this.txtbxMainHex.Name = "txtbxMainHex";
+            this.txtbxMainHex.ReadOnly = true;
+            this.txtbxMainHex.Size = new System.Drawing.Size(100, 32);
+            this.txtbxMainHex.TabIndex = 0;
+            this.txtbxMainHex.TextChanged += new System.EventHandler(this.txtbxMainHex_TextChanged);
             // 
-            // lblRedSecond
+            // label1
             // 
-            this.lblRedSecond.AutoSize = true;
-            this.lblRedSecond.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRedSecond.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblRedSecond.Location = new System.Drawing.Point(54, 289);
-            this.lblRedSecond.Name = "lblRedSecond";
-            this.lblRedSecond.Size = new System.Drawing.Size(46, 28);
-            this.lblRedSecond.TabIndex = 0;
-            this.lblRedSecond.Text = "Red";
-            this.lblRedSecond.Click += new System.EventHandler(this.label2_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label1.Location = new System.Drawing.Point(69, 479);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 28);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Edit Font";
+            this.label1.Click += new System.EventHandler(this.label2_Click);
             // 
-            // lblGreenSecond
+            // lblSecondaryHex
             // 
-            this.lblGreenSecond.AutoSize = true;
-            this.lblGreenSecond.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGreenSecond.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblGreenSecond.Location = new System.Drawing.Point(54, 345);
-            this.lblGreenSecond.Name = "lblGreenSecond";
-            this.lblGreenSecond.Size = new System.Drawing.Size(67, 28);
-            this.lblGreenSecond.TabIndex = 0;
-            this.lblGreenSecond.Text = "Green";
-            this.lblGreenSecond.Click += new System.EventHandler(this.label2_Click);
+            this.lblSecondaryHex.AutoSize = true;
+            this.lblSecondaryHex.BackColor = System.Drawing.Color.Transparent;
+            this.lblSecondaryHex.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSecondaryHex.ForeColor = System.Drawing.Color.Black;
+            this.lblSecondaryHex.Location = new System.Drawing.Point(62, 39);
+            this.lblSecondaryHex.Name = "lblSecondaryHex";
+            this.lblSecondaryHex.Size = new System.Drawing.Size(241, 32);
+            this.lblSecondaryHex.TabIndex = 1;
+            this.lblSecondaryHex.Text = "Secondary Color HEX";
+            this.lblSecondaryHex.Click += new System.EventHandler(this.lblMainHex_Click);
             // 
-            // lblBlueSecond
+            // txtbxSecondaryHex
             // 
-            this.lblBlueSecond.AutoSize = true;
-            this.lblBlueSecond.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBlueSecond.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.lblBlueSecond.Location = new System.Drawing.Point(54, 401);
-            this.lblBlueSecond.Name = "lblBlueSecond";
-            this.lblBlueSecond.Size = new System.Drawing.Size(52, 28);
-            this.lblBlueSecond.TabIndex = 0;
-            this.lblBlueSecond.Text = "Blue";
-            this.lblBlueSecond.Click += new System.EventHandler(this.label2_Click);
+            this.txtbxSecondaryHex.BackColor = System.Drawing.Color.Black;
+            this.txtbxSecondaryHex.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtbxSecondaryHex.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxSecondaryHex.ForeColor = System.Drawing.SystemColors.Menu;
+            this.txtbxSecondaryHex.Location = new System.Drawing.Point(68, 81);
+            this.txtbxSecondaryHex.Name = "txtbxSecondaryHex";
+            this.txtbxSecondaryHex.ReadOnly = true;
+            this.txtbxSecondaryHex.Size = new System.Drawing.Size(100, 32);
+            this.txtbxSecondaryHex.TabIndex = 2;
+            this.txtbxSecondaryHex.TextChanged += new System.EventHandler(this.txtbxSecondaryHex_TextChanged);
             // 
             // formSliderRGB
             // 
@@ -333,7 +408,10 @@
             this.Text = "formSliderRGB";
             this.panelContainer.ResumeLayout(false);
             this.panelContainer.PerformLayout();
+            this.panelSecondaryColor.ResumeLayout(false);
+            this.panelSecondaryColor.PerformLayout();
             this.panelMainColor.ResumeLayout(false);
+            this.panelMainColor.PerformLayout();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             this.ResumeLayout(false);
@@ -360,5 +438,10 @@
         private System.Windows.Forms.Label lblGreenSecond;
         private System.Windows.Forms.Label lblRedSecond;
         private System.Windows.Forms.Label lblBlueSecond;
+        private System.Windows.Forms.Label lblMainHex;
+        private System.Windows.Forms.TextBox txtbxMainHex;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtbxSecondaryHex;
+        private System.Windows.Forms.Label lblSecondaryHex;
     }
 }

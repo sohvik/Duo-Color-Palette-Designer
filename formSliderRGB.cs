@@ -13,6 +13,9 @@ namespace Projekti3
 {
     public partial class formSliderRGB : Form
     {
+        String mainHex;
+        String secondaryHex;
+
         public formSliderRGB()
         {
             InitializeComponent();
@@ -32,36 +35,47 @@ namespace Projekti3
         private int Blue2;
 
 
+        private void ApplySettings()
+        {
+
+            txtbxSecondaryHex.BackColor = Color.FromArgb(Red1, Green1, Blue1);
+            panelMainColor.BackColor = Color.FromArgb(Red1, Green1, Blue1);
+            txtbxMainHex.BackColor = Color.FromArgb(Red1, Green1, Blue1);
+            lblSecondaryHex.ForeColor = Color.FromArgb(Red1, Green1, Blue1);
+            txtbxSecondaryHex.ForeColor = Color.FromArgb(Red1, Green1, Blue1);
+        }
+
         private void ApplySettings2()
         {
 
+            txtbxSecondaryHex.BackColor = Color.FromArgb(Red2, Green2, Blue2);
             panelSecondaryColor.BackColor = Color.FromArgb(Red2, Green2, Blue2);
-        }
-
-
-        private void ApplySettings()
-        {
-            panelMainColor.BackColor = Color.FromArgb(Red1, Green1, Blue1);
+            lblMainHex.ForeColor = Color.FromArgb(Red2, Green2, Blue2);
+            txtbxMainHex.ForeColor = Color.FromArgb(Red2, Green2, Blue2);
 
         }
-
-
 
         private void ce_trackbarRed_ValueChanged()
         {
             Red1 = Convert.ToInt32(ce_trackbarRed.Value * 2.55);
+            mainHex = string.Format("{0:X2}{1:X2}{2:X2}", Red1, Green1, Blue1);
+            txtbxMainHex.Text = "#" + mainHex;
             ApplySettings();
         }
 
         private void ce_trackbarGreen_ValueChanged()
         {
             Green1 = Convert.ToInt32(ce_trackbarGreen.Value * 2.55);
+            mainHex = string.Format("{0:X2}{1:X2}{2:X2}", Red1, Green1, Blue1);
+            txtbxMainHex.Text = "#" + mainHex;
             ApplySettings();
         }
 
         private void ce_trackbarBlue_ValueChanged()
         {
             Blue1 = Convert.ToInt32(ce_trackbarBlue.Value * 2.55);
+            mainHex = string.Format("{0:X2}{1:X2}{2:X2}", Red1, Green1, Blue1);
+            txtbxMainHex.Text = "#" + mainHex;
             ApplySettings();
         }
 
@@ -70,12 +84,16 @@ namespace Projekti3
         {
 
             Red2 = Convert.ToInt32(ce_trackbarRed2.Value * 2.55);
+            secondaryHex = string.Format("{0:X2}{1:X2}{2:X2}", Red2, Green2, Blue2);
+            txtbxSecondaryHex.Text = "#" + secondaryHex;
             ApplySettings2();
         }
 
         private void ce_trackbarBlue2_ValueChanged()
         {
             Blue2 = Convert.ToInt32(ce_trackbarBlue2.Value * 2.55);
+            secondaryHex = string.Format("{0:X2}{1:X2}{2:X2}", Red2, Green2, Blue2);
+            txtbxSecondaryHex.Text = "#" + secondaryHex;
             ApplySettings2();
         }
 
@@ -83,6 +101,8 @@ namespace Projekti3
         {
             
             Green2 = Convert.ToInt32(ce_trackbarGreen2.Value * 2.55);
+            secondaryHex = string.Format("{0:X2}{1:X2}{2:X2}", Red2, Green2, Blue2);
+            txtbxSecondaryHex.Text = "#" + secondaryHex;
             ApplySettings2();
         }
 
@@ -100,6 +120,26 @@ namespace Projekti3
         }
 
         private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMainHex_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbxSecondaryHex_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbxMainHex_TextChanged(object sender, EventArgs e)
         {
 
         }
