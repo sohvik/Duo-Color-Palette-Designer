@@ -41,3 +41,20 @@ C:\Users\s3koan04\source\repos\ColorPaletteTool\obj\Debug\Projekti3.pdb
 C:\Users\s3koan04\source\repos\ColorPaletteTool\obj\Debug\Projekti3.formSliderRGB.resources
 C:\Users\s3koan04\source\repos\ColorPaletteTool\bin\Debug\CeFramework_free.dll
 C:\Users\s3koan04\source\repos\ColorPaletteTool\obj\Debug\Projekti3.csproj.CopyComplete
+C:\Users\s3koan04\source\repos\ColorPaletteTool\obj\Debug\Projekti3.formSavedPalette.resources
+C:\Users\s3koan04\source\repos\ColorPaletteTool\obj\Debug\Projekti3.formMenu.resources
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\bin\Debug\Projekti3.exe.config
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\bin\Debug\Projekti3.exe
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\bin\Debug\Projekti3.pdb
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\bin\Debug\CeFramework_free.dll
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\obj\Debug\Projekti3.csproj.AssemblyReference.cache
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\obj\Debug\Projekti3.Form1.resources
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\obj\Debug\Projekti3.formMenu.resources
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\obj\Debug\Projekti3.formSavedPalette.resources
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\obj\Debug\Projekti3.formSliderRGB.resources
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\obj\Debug\Projekti3.Properties.Resources.resources
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\obj\Debug\Projekti3.csproj.GenerateResource.cache
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\obj\Debug\Projekti3.csproj.CoreCompileInputs.cache
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\obj\Debug\Projekti3.exe
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\obj\Debug\Projekti3.pdb
+C:\Users\s3koan04\source\repos\ColorPalette Backuppi\obj\Debug\Projekti3.csproj.Up2Date
