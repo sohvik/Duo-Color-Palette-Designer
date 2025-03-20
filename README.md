@@ -1,8 +1,11 @@
 # Duo Color Palette Designer
 ## Esittely
 Ohjelmistokehys: .NET Framework (4.7.2)
+
 Graafinen käyttöliittymäkehys: Windows Forms (WinForms)
+
 Ohjelmointikieli: C#
+
 
 GitHub:ssa tee README.me -tiedostoon esittely sovelluksesta.
 Esittelyyn liitä mukaan:
@@ -30,5 +33,46 @@ Väripalettityökalun käyttö on helppoa ja hauskaa, sillä voi hakea inspiraat
 ## Kuvia 
 
 ## Koodin esittely ja pääkohdat
+
+Ohjelmiston pohjustus, ohjelmistossa laajasti käytettyjen, värien mukaan nimettyjen (päävärit, aksenttivärit) muuttujien esittely:
+```
+    public partial class formSliderRGB : Form
+    {
+        String mainHex;
+        String secondaryHex;
+
+        public formSliderRGB()
+        {
+            InitializeComponent();
+
+        }
+
+        private int Red1;
+        private int Green1;
+        private int Blue1;
+
+        private int Red2;
+        private int Green2;
+        private int Blue2;
+        ...
+```
+
+
+ApplySettings()-funktio, jolla muutetaan pääväriin liittyviä osia eri värisiksi:
+```
+        private void ApplySettings()
+    {
+            panelMainColor.BackColor = Color.FromArgb(Red1, Green1, Blue1);
+            txtbxMainHex.BackColor = Color.FromArgb(Red1, Green1, Blue1);
+            lblSecondaryHex.ForeColor = Color.FromArgb(Red1, Green1, Blue1);
+            txtbxSecondaryHex.ForeColor = Color.FromArgb(Red1, Green1, Blue1);
+
+            ce_trackbarRed.SlideColor = Color.FromArgb(Red1, 0, 0);
+            ce_trackbarGreen.SlideColor = Color.FromArgb(0, Green1, 0);
+            ce_trackbarBlue.SlideColor = Color.FromArgb(0, 0, Blue1);
+        }
+```
+
+
 
 ## Jatkokehitysideoita
