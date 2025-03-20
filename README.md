@@ -10,7 +10,6 @@ Ohjelmointikieli: C#
 GitHub:ssa tee README.me -tiedostoon esittely sovelluksesta.
 Esittelyyn liitä mukaan:
  Kattavat kuvakaappaukset sovelluksen eri näkymistä tai kattava video sovelluksen käyttämisestä selostettuna
- Esittele ja selitä pääkohdat koodista
  Jatkokehitysideat
 
 Duo Color Palette Designer on väripalettien suunnittelutyökaluksi tehty ohjelmisto. Ohjelmisto on toteutettu OSAO:n C#-ohjelmoinnin näyttötyöksi. 
@@ -33,6 +32,23 @@ Väripalettityökalun käyttö on helppoa ja hauskaa, sillä voi hakea inspiraat
 
 
 ## Kuvia 
+1. Aloitusnäkymä, kun sovelluksen avaa. Oikeanpuoleinen musta laatikko on pohja tulevalle väripaletille.
+![aloitusnakyma](https://github.com/user-attachments/assets/fb7c02f0-d3ab-4a3d-9259-cd66138e762c)
+
+2. Aloitan säätämällä liukusäätimillä mieleisen värin pääväriksi. Väri vie aluksi koko pohjan ja teksti näkyy mustana.
+![maincolor](https://github.com/user-attachments/assets/ea3db3a4-c2d9-4826-945b-acbbdee838e7)
+
+3. Seuraavaksi lähden hakemaan jotain sopivaa aksenttiväriä pääväriä vasten.
+![secondarycolor](https://github.com/user-attachments/assets/d04d23e3-c9e6-44a7-9a46-6a6c649befb8)
+
+4. Sekä pääväriä että aksenttiväriä voidaan missä vaiheessa tahansa muuttaa, hainkin palettiin täysin uudet värit.
+![muutos](https://github.com/user-attachments/assets/fbaf9733-c7da-4249-9993-2d3bdd35e648)
+
+5. Lopuksi valitsin kirjaisintyypin. Myös tämän jälkeen voisin muuttaa värejä, sillä ohjelmistossa ei ole vaadittua järjestystä, jossa edetä.
+![fontti](https://github.com/user-attachments/assets/f7fd0061-b93e-41ed-b5a4-ea02052dee68)
+
+6. Lopputulos, eli ohjelmistossa tallennettu kuvatiedosto paletista:
+![paletti_naytto](https://github.com/user-attachments/assets/dfe6d806-b68a-446c-896d-a1dc3ce6b681)
 
 ## Koodin esittely ja pääkohdat
 
