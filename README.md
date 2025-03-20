@@ -72,6 +72,22 @@ ApplySettings()-funktio, jolla muutetaan pääväriin liittyviä osia eri väris
             ce_trackbarBlue.SlideColor = Color.FromArgb(0, 0, Blue1);
         }
 ```
+ApplySettings2()-funktio, joka vastaavasti toimii aksenttivärien liittyvien osien värittämiseen:
+```
+        private void ApplySettings2()
+        {
+
+            txtbxSecondaryHex.BackColor = Color.FromArgb(Red2, Green2, Blue2);
+            panelSecondaryColor.BackColor = Color.FromArgb(Red2, Green2, Blue2);
+            lblMainHex.ForeColor = Color.FromArgb(Red2, Green2, Blue2);
+            txtbxMainHex.ForeColor = Color.FromArgb(Red2, Green2, Blue2);
+            txtbxSecondaryHex.Visible = true;
+
+            ce_trackbarRed2.SlideColor = Color.FromArgb(Red2, 0, 0);
+            ce_trackbarGreen2.SlideColor = Color.FromArgb(0, Green2, 0);
+            ce_trackbarBlue2.SlideColor = Color.FromArgb(0, 0, Blue2);
+        }
+``` 
 
 
 
