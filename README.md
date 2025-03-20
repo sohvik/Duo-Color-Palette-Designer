@@ -28,7 +28,10 @@ Lopuksi luotu väripaletti voidaan tallentaa omalle tietokoneelle kuvatiedostona
 Väripalettityökalun käyttö on helppoa ja hauskaa, sillä voi hakea inspiraatiota ja testata värien sopivuutta toisiinsa.
 
 ## Vuokaavio
+![vuokaavio_nayttotyo](https://github.com/user-attachments/assets/d7edbae7-120d-43ac-a68f-03e5c2b17965)
 
 ## Kuvia 
+
+## Koodin esittely ja pääkohdat
 
 ## Jatkokehitysideoita
