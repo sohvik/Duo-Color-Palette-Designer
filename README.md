@@ -88,7 +88,19 @@ ApplySettings2()-funktio, joka vastaavasti toimii aksenttivärien liittyvien osi
             ce_trackbarBlue2.SlideColor = Color.FromArgb(0, 0, Blue2);
         }
 ``` 
+Liukusäätimien arvon muutosta havainnoiva funktio. Samanlainen funktio on tehty kaikille kuudelle eri säätimelle, nimi vain muuttuu värin mukaan (trackbarRed, trackbarGreen, trackbarRed2 jne). Lopuksi kutsutaan ApplySettings() pääväriin liittyvissä muutoksissa tai ApplySettings2() aksenttiväriin liittyvissä muutoksissa. Koodissa myös muutetaan HEX-tekstiä ja RGB-liukusäätimen tekstilaatikon arvon tekstiä vastaamaan liukusäätimen muutosta:
+```
+        private void ce_trackbarRed_ValueChanged()
+        {
+            Red1 = Convert.ToInt32(ce_trackbarRed.Value);
+            mainHex = string.Format("{0:X2}{1:X2}{2:X2}", Red1, Green1, Blue1);
+            txtbxMainHex.Text = "#" + mainHex;
 
+            int RedTxtbx = Convert.ToInt32(ce_trackbarRed.Value);
+            txtbxRGBMainRed.Text = RedTxtbx.ToString();
+            ApplySettings();
+        }
+```
 
 
 ## Jatkokehitysideoita
