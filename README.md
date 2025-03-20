@@ -6,13 +6,9 @@ Ohjelmointikieli: C#
 
 GitHub:ssa tee README.me -tiedostoon esittely sovelluksesta.
 Esittelyyn liitä mukaan:
- Selvitys sovelluksen toiminnasta ja käyttötarkoituksesta
- Vuokaavio sovelluksesta
  Kattavat kuvakaappaukset sovelluksen eri näkymistä tai kattava video sovelluksen käyttämisestä selostettuna
  Esittele ja selitä pääkohdat koodista
  Jatkokehitysideat
-
-**Selvitys sovelluksen toiminnasta ja käyttötarkoituksesta:**
 
 Duo Color Palette Designer on väripalettien suunnittelutyökaluksi tehty ohjelmisto. Ohjelmisto on toteutettu OSAO:n C#-ohjelmoinnin näyttötyöksi. 
 Halusin luoda suunnitteluun ja väreihin liittyvän työkalun, jolle minulla voisi olla myös myöhempien tehtävien yhteydessä käyttöä. 
