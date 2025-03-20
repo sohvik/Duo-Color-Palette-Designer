@@ -6,6 +6,7 @@ Graafinen käyttöliittymäkehys: Windows Forms (WinForms)
 
 Ohjelmointikieli: C#
 
+Tekijä: Ann-Sofi Korpela, 20.3.2025
 
 Duo Color Palette Designer on väripalettien suunnittelutyökaluksi tehty ohjelmisto. Ohjelmisto on toteutettu OSAO:n C#-ohjelmoinnin näyttötyöksi. 
 Halusin luoda suunnitteluun ja väreihin liittyvän työkalun, jolle minulla voisi olla myös myöhempien tehtävien yhteydessä käyttöä. 
@@ -189,3 +190,8 @@ Arvon lisääminen liukusäätimeen tekstilaatikkoon luvun syöttämisen kautta:
 ```
 
 ## Jatkokehitysideoita
+Duo Color Palette Designeriä voisi nykyisestä versiosta vielä jatkokehittää monin eri tavoin. Se onkin hyvä pohja jollekin laajemmalle sovellukselle.
+Ohjelmistoon voisi lisätä tallennusosan, jossa käyttäjä voi nimetä ja tallentaa ohjelmistoon tekemiään väripaletteja. Paletit voisi sitten palauttaa ohjelmiston editoriin, jos käyttäjä haluaa hakea käyttämiensä värien tiedot, ja helposti editoida aikaisemmin tekemäänsä palettia tai jatkaa siitä.
+
+Sovellukseen voisi lisätä myös eri laajuisten palettien editoreita, esimerkiksi 1-, 3- tai 4-värisen paletin (ja niin edelleen). Käyttäjä voisi myös itse määritellä eri värien tilasuhteita toisiinsa. 
+
